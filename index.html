@@ -2,8 +2,9 @@
 <html lang="en">
   <body>
 		<div class="frame">
-      <img class="gun" src="image-removebg-preview.png" alt="image of a handgun" height="200px" width="200px">
-     	 <img class="A1" src="A1.png" alt="A" height="100px">
+      
+      <img class="gun" src="image-removebg-preview.png" alt="image of a handgun" height="200px" width="200px">	
+      <img class="A1" src="A1.png" alt="A" height="100px">
        <img class="B" src="B.png" alt="B" height="100px">
        <img class="O" src="O.png" alt="0" height="100px">
        <img class="Y" src="Y.png" alt="Y" height="100px">
@@ -13,16 +14,16 @@
        <img class="G" src="G.png" alt="G" height="100px">
        <img class="U" src="U.png" alt="U" height="100px">
        <img class="N" src="N.png" alt="N" height="100px">
-      <iframe src="https://giphy.com/embed/od22gJJ5IdwFq" width="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-      <iframe src="https://giphy.com/embed/B0uJ6d5OXb50k" width="480" height="100" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-      <iframe src="https://giphy.com/embed/7A20b1WUepXpJAE6PL" width="480" height="100" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-      <iframe src="https://giphy.com/embed/6261y9yyIsd2dXVBdS" width="480" height="100" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+      <iframe src="https://giphy.com/embed/od22gJJ5IdwFq" width="200" frameborder="0" class="blue-warning" allowfullscreen></iframe>
+      <iframe src="https://giphy.com/embed/B0uJ6d5OXb50k" width="480" height="100" frameborder="0" class="alert" allowfullscreen></iframe>
+      <iframe src="https://giphy.com/embed/7A20b1WUepXpJAE6PL" width="480" height="250" frameborder="0" class="tyler" allowfullscreen></iframe>
+      <iframe src="https://giphy.com/embed/6261y9yyIsd2dXVBdS" width="480" height="100" frameborder="0" class="taxi" allowfullscreen></iframe>
+      <p class="go-home">OH YOU WANNA GO HOME? COOL, BETTER CALL YOU A CAB</p>
     </div>
 		<div class="gunshot"></div>
   
   </body>
 </html>
-
 
 <style>
  body{
@@ -41,7 +42,7 @@
   .gun {
     position: absolute;
     transform: translate(200px, 250px) rotate(15deg) scale(2);
-    z-index: 1;
+    z-index: 2;
   }
   .A1 {
     position: absolute;
@@ -89,5 +90,30 @@
     animation: blinker3 1s ease-in-out infinite alternate;
   }
   @keyframes blinker3 { to { opacity: 0; } }
-  
+  .tyler {
+    position: absolute;
+    bottom: 36px;
+    left: 31px;
+  }
+  .blue-warning {
+    position: absolute;
+    bottom: 35px;
+    left: 49px;
+    transform: ;
+    z-index: 3
+  }
+  .taxi {
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 59px;
+    right: -135px;
+  }
+  .alert {
+    position: absolute;
+    transform: translate(-60px, 290px) scale(.5) rotate(35deg);
+    z-index: 3;
+  }
+  .go-home {
+    
+  }
 </style>
