@@ -13,6 +13,10 @@
        <img class="G" src="G.png" alt="G" height="100px">
        <img class="U" src="U.png" alt="U" height="100px">
        <img class="N" src="N.png" alt="N" height="100px">
+      <iframe src="https://giphy.com/embed/od22gJJ5IdwFq" width="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+      <iframe src="https://giphy.com/embed/B0uJ6d5OXb50k" width="480" height="100" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+      <iframe src="https://giphy.com/embed/7A20b1WUepXpJAE6PL" width="480" height="100" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+      <iframe src="https://giphy.com/embed/6261y9yyIsd2dXVBdS" width="480" height="100" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
     </div>
 		<div class="gunshot"></div>
   
@@ -32,6 +36,7 @@
     border: 1px solid black;
     width: 90%;
     height: 90%;
+    background-color: #c88ca1;
   }
   .gun {
     position: absolute;
@@ -69,14 +74,20 @@
   .G {
     position: absolute;
     transform: translate(550px, 300px) rotate(10deg) scale(1.4);
+    animation: blinker 1.7s cubic-bezier(.5, 0, 1, 1) infinite alternate;  
   }
+  @keyframes blinker { to { opacity: 0; } }
   .U {
     position: absolute;
     transform: translate(630px, 330px) rotate(20deg) scale(1.5);
+    animation: blinker2 0.6s cubic-bezier(1, 0, 0, 1) infinite alternate;
   }
+  @keyframes blinker2 { to { opacity: 0; } }
   .N {
     position: absolute;
     transform: translate(750px, 380px) rotate(20deg) scale(1.4);
+    animation: blinker3 1s ease-in-out infinite alternate;
   }
+  @keyframes blinker3 { to { opacity: 0; } }
   
 </style>
