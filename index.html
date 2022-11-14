@@ -31,22 +31,24 @@
 <!-- this is for the section about the characters -->
     
   	<section class="tyler">
-      <h1>THE CHARACTERS</h1>
-      <p>this concept album follows the love triangle between three people</p>
-      <div class="row">
-        <div class="tyler-col">
-          <h3>the lover</h3>
-          <p>the man igor has known for a long time and has developed feelings for</p>
+      <div class="tyler-background">
+        <h1>CHARACTERS</h1>
+        <p>this concept album follows the love triangle between three people</p>
+        <div class="row">
+          <div class="tyler-col">
+            <h3>THE LOVER</h3>
+            <p>the man igor has known for a long time and has developed feelings for</p>
+          </div>
+          <div class="tyler-col">
+            <h3>IGOR</h3>
+            <p>he balances along the line of ugliness and beauty</p>
+          </div>
+          <div class="tyler-col">
+            <h3>SOME GIRL</h3>
+            <p>she offers the lover an escape from facing who he really is</p>
+          </div>
         </div>
-        <div class="tyler-col">
-          <h3>igor</h3>
-          <p>he balances along the line of ugliness and beauty</p>
-        </div>
-        <div class="tyler-col">
-          <h3>some girl</h3>
-          <p>she offers the lover an escape from facing who he really is</p>
-        </div>
-      </div>
+    	</div>
     </section>
     
 <!-- this is for the section with all the songs -->
@@ -104,19 +106,19 @@
        <h2>SEASON TWO</h2>
       <div class="row">
         <div class="song-col">
-          <img src="earf.webp" alt="one song">
+          <img src="pup.jpeg" alt="one song">
           <div class="layer">
             <h3>PUPPET</h3>
           </div>
         </div>
          <div class="song-col">
-          <img src="i-think.webp" alt="one song">
+          <img src="whats-good.jpeg" alt="one song">
           <div class="layer">
             <h3>WHAT'S GOOD</h3>
           </div>
         </div>
          <div class="song-col">
-          <img src="run.webp" alt="one song">
+          <img src="gone.jpeg" alt="one song">
           <div class="layer">
             <h3>GONE, GONE/THANK YOU</h3>
           </div>
@@ -124,13 +126,13 @@
       </div>
       <div class="row">
         <div class="song-col">
-          <img src="green-suit.webp" alt="one song">
+          <img src="no-love.jpeg" alt="one song">
           <div class="layer">
             <h3>I DON'T LOVE YOU ANYMORE</h3>
           </div>
         </div>
          <div class="song-col">
-          <img src="magic-wand.webp" alt="one song">
+          <img src="friends.jpeg" alt="one song">
           <div class="layer">
             <h3>ARE WE STILL FRIENDS?</h3>
           </div>
@@ -285,18 +287,23 @@
     transition: 1s;
   }
   
-/*   characters
-   */
+/*   characters*/
+  
   .tyler {
     width: 100%;
     margin: auto;
-    text-align: center;
-    padding-top: 100px;
-    font-family: "Archivo Black", serif;
     background-image: url("ladder.png");
     background-position: center;
     background-size: cover;
     position: relative;
+    font-family: "Archivo Black", serif;
+  }
+  .tyler-background {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
  .tyler h1 {
     font-size: 36px;
@@ -315,7 +322,7 @@
   }
   .tyler-col {
     flex-basis: 31%;
-    background: red;
+    background: #E84F79;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
@@ -327,7 +334,7 @@
     color: white;
   }
   .tyler-col:hover {
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px 0px hsla(0, 0%, 100%, 0.75);
     transition: 0.5s;
   }
   
