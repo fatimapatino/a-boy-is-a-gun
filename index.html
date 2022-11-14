@@ -12,7 +12,7 @@
     
     <section class="header"> 
 			<nav>
-        <a href="https://open.spotify.com/album/5zi7WsKlIiUXv09tbGLKsE" target="_blank"><img src="igoralbum.jpeg" alt="igor album"></a>
+        <a href="https://open.spotify.com/album/5zi7WsKlIiUXv09tbGLKsE" target="_blank"><img src="tyler-head.gif" alt="tyler head gif"></a>
         <div class="nav-links">
           <ul>
             <li><a href="">A BOY IS A GUN</a></li>
@@ -81,7 +81,49 @@
     <section class="other-albums">
       <h1>other albums</h1>
       <p>his story will go on</p>
+      <div class="row">
+        <div class="albums-col">
+          <img src="flower-boy.png" alt="flower boy">
+          <h3>Flower Boy</h3>
+          <p>he came out and wants to float like a butterfly but the world makes him sting like a bee</p>
+        </div>
+         <div class="albums-col">
+          <img src="call-me.jpg" alt="flower boy">
+          <h3>Call Me If You Get Lost</h3>
+          <p>acceptance might be key, but he's still running away from his problems</p>
+        </div>
+      </div>
     </section>
+    
+<!-- testimonials -->
+    
+    <section class="testimonials">
+      <h1>Reviews</h1>
+      <p>this is what i think about him</p>
+      <div class="row">
+        <div class="test-col">
+          <img src="star.gif" alt="cute star">
+          <div>
+            <p>something is being said here but idl what I D K if I have what it takes to be a cool cSS person but I sure will try</p>
+            <h3>YESSIR</h3>
+          </div>
+        </div>
+         <div class="test-col">
+          <img src="O.png" alt="cute star">
+          <div>
+            <p>something is being said here but idl what I D K if I have what it takes to be a cool cSS person but I sure will try</p>
+            <h3>YESSIR</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+<!-- footer section -->
+    
+		<section class="fatima">
+      <h2>let the story continue</h2>
+      <p>Made by Fatima Patino &lt3</p>
+    </section>    
     
   </body>
   
@@ -228,7 +270,7 @@
     margin: auto;
     text-align: center;
     padding-top: 50px;
-     font-family: "Archivo Black", serif;
+    font-family: "Archivo Black", serif;
   }
   .song-col {
     flex-basis: 32%;
@@ -272,9 +314,82 @@
     opacity: 1;
   }
   
-/*   other albums
- */
+/*   other albums */
   
+  .other-albums {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    font-family: "Archivo Black", serif;
+  }
+  .albums-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+  }
+  .albums-col img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .albums-col p {
+    padding: 0;
+  }
+  .albums-col h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+/*   testimonials */
+  
+  .testimonials {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+    font-family: "Archivo Black", serif;
+  }
+  .test-col {
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    text-align: left;
+    background: grey;
+    padding: 25px;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>	💔</text></svg>") 16 0,auto;
+    display: flex;
+  }
+  .test-col img {
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+  }
+  .test-col p {
+    padding: 0;
+  }
+  .test-col h3 {
+    margin-top: 15px;
+    text-align: left;
+  } 
+  
+/* footer section
+   */
+  .fatima {
+    width: 100%;
+    margin: auto;
+    padding: 30px 0;
+    text-align: center;
+    font-family: "Archivo Black", serif;
+  }
+  .fatima h2 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+  }
 </style>
 
 
