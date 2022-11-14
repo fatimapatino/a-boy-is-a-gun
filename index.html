@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Tyler Collage</title>
   </head>
+  
   <body>
+    
+<!-- this is for the pink ombre section -->
+    
     <section class="header"> 
 			<nav>
         <a href="https://open.spotify.com/album/5zi7WsKlIiUXv09tbGLKsE" target="_blank"><img src="igoralbum.jpeg" alt="igor album"></a>
@@ -22,9 +26,38 @@
      <p>i think i'm falling in love. this time i think it's for real.</p>
      <a href="" class="real-btn">is it for real?</a>
     </div>
-    
     </section>
+    
+<!-- this is for the section about the characters -->
+    
+  	<section class="tyler">
+      <h1>tyler, the creator</h1>
+      <p>all songs written, produced, and arranged by tyler okonma</p>
+      <div class="row">
+        <div class="tyler-col">
+          <h3>lover</h3>
+          <p>somethinglolidkwhat will go here loloolol</p>
+        </div>
+        <div class="tyler-col">
+          <h3>igor</h3>
+          <p>somethinglolidkwhat will go here loloolol</p>
+        </div>
+        <div class="tyler-col">
+          <h3>some girl</h3>
+          <p>somethinglolidkwhat will go here loloolol</p>
+        </div>
+      </div>
+    </section>
+    
+<!-- this is for the section with all the songs -->
+    
+    <section class="songs">
+      <h1>storyline</h1>
+      <p>his journey was a long and hard one, and who knows if he came out winning</p>
+		</section>
+    
   </body>
+  
 </html>
 
 <style>
@@ -105,6 +138,7 @@
     text-decoration: none;
     color: red;
     border: 1px solid red;
+    border-radius: 10px;
     padding: 12px;
     font-size: 20px;
     background: pink;
@@ -115,6 +149,44 @@
     border: 1px solid white;
     background: white;
     transition: 1s;
+  }
+  
+  .tyler {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    font-family: "Archivo Black", serif;
+  }
+ .tyler h1 {
+    font-size: 36px;
+  }
+  .tyler p {
+    color: black;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 10px;
+  }
+  .row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .tyler-col {
+    flex-basis: 31%;
+    background: red;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+  }
+  .tyler-col h3 {
+    text-align: center;
+    margin: 10px 0;
+  }
+  .tyler-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    transition: 0.5s;
   }
 
 </style>
