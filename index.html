@@ -54,7 +54,34 @@
     <section class="songs">
       <h1>storyline</h1>
       <p>his journey was a long and hard one, and who knows if he came out winning</p>
+      <div class="row">
+        <div class="song-col">
+          <img src="still-friends.jpeg" alt="one song">
+          <div class="layer">
+            <h3>ARE WE STILL FRIENDS?</h3>
+          </div>
+        </div>
+         <div class="song-col">
+          <img src="i-think.webp" alt="one song">
+          <div class="layer">
+            <h3>I THINK</h3>
+          </div>
+        </div>
+         <div class="song-col">
+          <img src="no-more.jpeg" alt="one song">
+          <div class="layer">
+            <h3>I DON'T LOVE YOU ANYMORE</h3>
+          </div>
+        </div>
+      </div>
 		</section>
+    
+<!--this is for his other albums-->
+    
+    <section class="other-albums">
+      <h1>other albums</h1>
+      <p>his story will go on</p>
+    </section>
     
   </body>
   
@@ -69,6 +96,9 @@
     font-family: "Archivo Black";
     src: url("ArchivoBlack-Regular.ttf");
   }
+  
+/*   pink section
+   */
   .header {
     min-height: 100vh;
     width: 100%;
@@ -151,6 +181,8 @@
     transition: 1s;
   }
   
+/*   characters
+   */
   .tyler {
     width: 80%;
     margin: auto;
@@ -188,7 +220,61 @@
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
     transition: 0.5s;
   }
-
+  
+/*   storyline
+   */
+  .songs {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+     font-family: "Archivo Black", serif;
+  }
+  .song-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+  .song-col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>	💔</text></svg>") 16 0,auto;
+  }
+  .layer:hover {
+    background: rgba(0,0,0,0.2);
+  }
+  .layer h3 {
+    width: 100%;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+  }
+  
+/*   other albums
+ */
+  
 </style>
 
 
