@@ -81,19 +81,19 @@
       					-230px 250px 5px hsl(299, 100%, 80%),
       					250px 350px 5px hsl(234, 100%, 63%);
   }
-  .scroll-container {
+	#scroll-container {
     margin: 10px 0 40px;
     font-size: 24px;
-  	overflow: hidden;
-}
-  .scroll-text {
+  	overflow: visible;
+	}
+  #scroll-text {
   transform: translateX(100%);
   animation: animation 20s linear infinite;
-}
-@keyframes animation {
+	}
+	@keyframes animation {
   from { transform: translateX(100%); }
   to { transform: translateX(-100%); }
-}
+	}
   .real-btn {
     display: inline-block;
     text-decoration: none;
@@ -386,8 +386,8 @@
     	</nav>
    <div class="text-box">
      <h1>IGOR</h1>
-     <div class="scroll-container">
- 				 <div class="scroll-text">
+     <div id="scroll-container">
+ 				 <div id="scroll-text">
            the absolute greatest album of all time!!! 
            this is a concept album masterpiece that explores the inner struggle 
            of falling in love with someone that doesn't love you back
